@@ -1,21 +1,32 @@
-<form action=""class="drac">
-    <div class="form-group">
-        <input type="text" class="form-control" placeholder="username" [(ngModel)]="username" name="username" (keyup)="findUser()">
-    </div>
+<form action="" class="drac">
+  <div class="form-group">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="username"
+      [(ngModel)]="username"
+      name="username"
+      (keyup)="findUser()"
+    />
+  </div>
 </form>
-
-
-
-
-
-
 <div class="container-fluid" *ngIf="user">
   <div class="panel panel-default">
     <div class="panel-heading container-fluid">
-      {{ user.name }}
+      <!-- {{ user.name }}
       {{ user.login }}
       {{ user.location }}
-      {{ user.email }}
+      {{ user.email }} -->
+      <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">
+                    {{ user.name }}
+                    {{ user.login }}
+                    {{ user.location }}
+                    {{ user.email }}
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
     </div>
     <div class="panel-body container-fluid">
       <div class="row col-sm-3">
@@ -53,7 +64,6 @@
             class="btn btn-success btn-sm"
             >View on github</a
           >
-          
         </p>
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -61,7 +71,17 @@
           </div>
           <div class="panel-body" *ngFor="let repo of repos">
             <p>
-              {{ repo.name }}
+                <br>
+
+                
+                <br>
+                <div class="card">
+                        <div class="card-header">
+                                {{ repo.name }}
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">{{repo.description}}</p>
+                          <p class="card-title">created on {{repo.created_at| date}}</p>
               <a
                 href="{{ repo.html_url }}"
                 target="_blank"
@@ -69,7 +89,7 @@
               >
                 More details</a
               >
-            </p>
+            
           </div>
         </div>
       </div>
