@@ -1,3 +1,9 @@
 .drac {
-    padding-top: 2vh;
+    /* padding-top: 15vh; */
+    width:40%;
+    margin-right:10vh;
+    
+}
+body {
+    background-color: gray;
 }
