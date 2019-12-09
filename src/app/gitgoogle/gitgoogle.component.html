@@ -1,12 +1,12 @@
 <div class="container-fluid" *ngIf=user>
     <div class="panel panel-default">
-        <div class="panel-heading">
+        <div class="panel-heading container-fluid">
             {{user.name}}
             {{user.login}}
             {{user.location}}
             {{user.email}}
         </div>
-        <div class="panel-body">
+        <div class="panel-body container-fluid">
             <div class="row col-sm-3"> 
                 <img src="{{user.avatar_url}}" >
             </div>
@@ -18,8 +18,22 @@
                     <li class="list-group-item" *ngIf="user.blog"><a href="{{user.blog}}" target="_blank">{{user.blog}}</a></li>
                 </ul>
             </div>
-            <div class="col-sm-4">
-                <p><strong>{{user.followers}} Followers</strong></p>
+            <div class="col-sm-4 container-fluid">
+                <p>
+                    <span class="label label-default">{{user.followers}} Followers</span>
+                    <span class="label label-primary">{{user.following}} Following</span>
+                    <span class="label label-success">{{user.public_gists}} Gists</span>
+                    <span class="label label-warning">{{user.public_repos}} repos</span>
+                </p>
+                <p> <a href="{{user.html_url}}" target="_blank" class="btn btn-success btn-sm">View on github</a></p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>Repos</h2>
+                    </div>
+                    <div class="panel-body" *ngFor="let repo of repos">
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
