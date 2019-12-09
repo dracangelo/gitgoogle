@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { GitgoogleComponent } from './gitgoogle/gitgoogle.component';
 import {  GitgoogleService } from './gitgoogle.service';
 import { HttpClientModule } from '@angular/common/http';
-
+import { FormsModule } from "@angular/forms"
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // GitgoogleService,
+    FormsModule,
     HttpClientModule ,
   ],
   providers: [GitgoogleService],
