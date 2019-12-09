@@ -9,6 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Deploying
 
 ## Licence
 The MIT License (MIT)
@@ -46,3 +47,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Contacts
 - kelvinmbuguaw@gmail.com
 - 0702158483
+
+## Author
+Drac
