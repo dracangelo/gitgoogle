@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GitgoogleComponent } from './gitgoogle/gitgoogle.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GitgoogleComponent
   ],
   imports: [
     BrowserModule,
