@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { GitgoogleComponent } from './gitgoogle/gitgoogle.component';
 import {  GitgoogleService } from './gitgoogle.service';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from "@angular/forms"
+import { FormsModule } from "@angular/forms";
+import { DateCountPipe } from './date-count.pipe'
 @NgModule({
   declarations: [
     AppComponent,
-    GitgoogleComponent
+    GitgoogleComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
