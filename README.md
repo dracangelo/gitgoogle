@@ -9,6 +9,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+- Displays GitHub info of a user when user name is entered
+* INPUT: "user name entered"
+* OUTPUT: "Displays User Details"
+- Displays all repositories of a user when show repositories button is pressed
+* INPUT: "Show repositories button pressed
+ * OUTPUT: "Displays User Repo Details"
+ 
 ## Deploying
 
 
