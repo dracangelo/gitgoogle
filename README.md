@@ -15,10 +15,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 - Displays all repositories of a user when show repositories button is pressed
 * INPUT: "Show repositories button pressed
  * OUTPUT: "Displays User Repo Details"
- 
-## Deploying
-
-
 
 ## Code scaffolding
 
