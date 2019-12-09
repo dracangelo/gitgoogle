@@ -1,1 +1,26 @@
-<p>gitgoogle works!</p>
+<div class="container-fluid" *ngIf=user>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            {{user.name}}
+            {{user.login}}
+            {{user.location}}
+            {{user.email}}
+        </div>
+        <div class="panel-body">
+            <div class="row col-sm-3"> 
+                <img src="{{user.avatar_url}}" >
+            </div>
+            <div class="col-sm-5">
+                <ul class="list-groups">
+                    <li class="list-group-item" *ngIf="user.bio">{{user.bio}}</li>
+                    <li class="list-group-item" *ngIf="user.hireable">Available for hire</li>
+                    <li class="list-group-item" *ngIf="user.email"><a href="emailto:{{user.email}}"> {{user.email}}</a></li>
+                    <li class="list-group-item" *ngIf="user.blog"><a href="{{user.blog}}" target="_blank">{{user.blog}}</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <p><strong>{{user.followers}} Followers</strong></p>
+            </div>
+        </div>
+    </div>
+</div>

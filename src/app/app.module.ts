@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GitgoogleComponent } from './gitgoogle/gitgoogle.component';
+import {  GitgoogleService } from './gitgoogle.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -12,9 +14,11 @@ import { GitgoogleComponent } from './gitgoogle/gitgoogle.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // GitgoogleService,
+    HttpClientModule ,
   ],
-  providers: [],
+  providers: [GitgoogleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
